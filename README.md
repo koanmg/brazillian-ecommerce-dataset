@@ -1,135 +1,85 @@
-
 Brazilian E-Commerce Data Analysis (Olist)
-Problem Statement
-This project explores the Brazilian E-Commerce Public Dataset by Olist, with the goal of uncovering actionable insights into customer behavior, product trends, geographic patterns, seller performance, and payment methods. These insights can help improve marketing strategies, logistics, and overall customer experience.
+📌 Problem Statement
+This project focuses on uncovering actionable insights from the Brazilian E-Commerce Public Dataset by Olist. The goal is to understand customer behavior, product trends, geographic dynamics, seller performance, and payment patterns to help the company enhance marketing, logistics, and customer experience.
 
-Dataset
-The dataset is available on Kaggle - Brazilian E-Commerce Public Dataset by Olist. It contains data across multiple dimensions:
+📊 Dataset Overview
+The dataset includes multiple CSV files with the following dimensions:
 
-Orders: Timestamps, status, delivery dates, etc.
+Orders – order timestamps, status, delivery dates
+Customers – customer ID, city, state, zip code
+Products – category, dimensions, weight, pricing
+Sellers – seller ID, location, performance
+Payments – payment types, installments, values
+Reviews – scores, comments, timEstamps
 
-Customers: Demographic data (state, city, zip code).
-
-Products: Category, dimensions, weight, and pricing.
-
-Sellers: Seller location and performance metrics.
-
-Payments: Payment types, installment plans, and values.
-
-Reviews: Review scores, comments, and timestamps.
-
-Tasks Performed
+✅ Tasks Performed
 1. Data Exploration and Cleaning
-Loaded and merged relevant datasets.
-
-Handled missing values using backfilling and forward filling.
-
-Ensured correct data types and cleaned inconsistencies.
+Merged relevant datasets
+Handled missing values (backfill/forward fill)
+Ensured correct data types and removed inconsistencies
 
 2. Time-Series Analysis
-Analyzed order volumes over time.
-
-Performed seasonal decomposition to identify trends and seasonality in monthly orders.
+Analyzed monthly order trends
+Applied seasonal decomposition for trend and seasonality
 
 3. Geographic Analysis
-Visualized customer and seller locations by state and city.
-
-Identified regional patterns and high-activity zones.
+Mapped customer and seller locations
+Identified regional hotspots and order patterns
 
 4. Product Analysis
-Analyzed the popularity of product categories.
+Measured product category popularity
+Explored relationships between price, weight, size, and sales
 
-Explored the relationship between price, weight, dimensions, and sales.
-
-Identified top-selling product types.
+Identified top-selling product categories
 
 5. Customer Behavior Analysis
-Calculated metrics like total revenue per customer, order frequency, and average order value (AOV).
-
-Applied KMeans clustering to group customers by behavior.
+Calculated total revenue, order frequency, and AOV
+Clustered customers using KMeans for segmentation
 
 6. Seller Performance Analysis
-Evaluated sellers based on order volume, delivery times, and customer reviews.
+Analyzed seller order volume, delivery times, and review scores
 
 7. Payment Analysis
-Analyzed usage of different payment types and installment options.
+Explored payment methods and installment preferences
+Linked payment types with purchase behavior
 
-Explored how payment methods affect purchasing behavior.
-
-8. Data Visualization
-Created a wide range of visualizations using Matplotlib and Seaborn:
-
-Bar charts
-
-Line plots
-
-Scatter plots
-
+📈 Visualizations Created
+Bar Charts
+Line Graphs
+Scatter Plots
 Histograms
+Cluster Plots
+Time-Series Trends
 
-Time series visualizations
-
-Cluster plots
-
-Tools and Libraries
+🧰 Tools and Libraries
 Python
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Seaborn
-
+Pandas, NumPy
+Seaborn, Matplotlib
 Scikit-learn
-
 Statsmodels
 
-How to Run
-Clone the repository:
+💡 Key Insights
+Seasonal peaks in order volume align with sales/promotions
+Southeast Brazil shows higher e-commerce activity
+A few product categories dominate sales
+Installment payments are common and linked to high-value purchases
+Customer segmentation enables more personalized strategies
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/olist-ecommerce-eda.git
-cd olist-ecommerce-eda
-Install dependencies:
+🎯 Project Outcome
+Better understanding of customer purchasing behavior
+Data-driven recommendations for marketing and logistics
+Insights into seller and product performance
+Enhanced strategy planning for payment options
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Open the Jupyter Notebook:
+📄 License
+This project is licensed under the MIT License.
 
-bash
-Copy
-Edit
-jupyter notebook Olist_EDA.ipynb
-Key Insights
-Monthly orders show trends and seasonality aligned with promotions and holidays.
+🙏 Acknowledgements
+Dataset source: Olist - Kaggle
 
-Urban areas, particularly in the Southeast region of Brazil, show higher purchasing activity.
 
-A few product categories dominate the sales volume.
 
-Installment-based payments are common and correlate with higher-value purchases.
 
-Customer segmentation reveals valuable behavioral clusters for personalized marketing.
 
-Outcome
-This analysis provides the business with:
 
-A clearer picture of who the customers are and how they shop.
 
-Recommendations for inventory, promotions, and targeted advertising.
-
-Insights into seller operations and potential areas for service improvement.
-
-An understanding of how different payment methods impact customer spending.
-
-License
-This project is released under the MIT License.
-
-Acknowledgements
-Dataset: Olist - Kaggle
